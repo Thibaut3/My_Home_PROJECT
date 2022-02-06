@@ -48,6 +48,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
+                android:onClick="toAddPiece"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/plus" />
@@ -55,6 +56,7 @@
         </LinearLayout>
 
         <ListView
+            android:id="@+id/listPiece"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1" />
