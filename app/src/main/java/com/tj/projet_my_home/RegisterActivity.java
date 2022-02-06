@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.OkHttpResponseListener;
 
@@ -24,17 +23,22 @@ public class RegisterActivity extends AppCompatActivity {
         AndroidNetworking.initialize(this);
     }
 
+    //Fonction inscription -> View principale
     public void register(View v){
 
+        //Récupération du nom
         EditText editName = findViewById(R.id.RegisterName);
         String name = editName.getText().toString();
 
+        //Récupération du mail
         EditText editMail = findViewById(R.id.RegisterMail);
         String mail = editMail.getText().toString();
 
+        //Récupération du mot de passe
         EditText editMdp = findViewById(R.id.RegisterMDP);
         String mdp = editMdp.getText().toString();
 
+        //Création de la requête
         AndroidNetworking.post("https://myhouse.lesmoulinsdudev.com/register")
                 .addBodyParameter("name", name)
                 .addBodyParameter("login", mail)

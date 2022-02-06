@@ -38,7 +38,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/ConnexionMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -50,7 +50,7 @@
             android:textColorLink="#BC8554" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/ConnexionMDP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -66,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:onClick="connexion"
             android:text="Connexion"
             android:textColor="#000000"
             app:backgroundTint="#B3875B" />
